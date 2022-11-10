@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my frist jquery file</title>
+<script src="./jquery-3.6.1.min.js"></script>
+</head>
+<body>
+
+    <h1>button with ul li:first</h1>
+
+    <p>List 1:</p>
+    <ul>
+      <li>Coffee</li>
+      <li>Milk</li>
+      <li>Tea</li>  
+    </ul>
+    
+    <p>List 2:</p>
+    <ul>
+      <li>Coffee</li>
+      <li>Milk</li>
+      <li>Tea</li>
+    </ul>
+    
+    <button>Click to ul li:first     </button>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("ul li:first").hide();
+          });
+        });
+        </script>
+</body>
+</html>

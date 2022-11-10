@@ -1,0 +1,156 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>this my first jq</title>
+    <style>
+      .main , .gett{
+        margin: 10% 15%;
+      }
+    #flip , #panel{font-size: xx-large;  height: 60px; width: 50%; background-color: brown ; text-align: center;}
+        
+    #panel{
+          display: none;
+        }
+    #docs , #side{font-size: xx-large;  height: 60px; width: 50%; background-color: brown ; text-align: center;}
+
+    #glow{
+      background-color: red; border:2px solid white; position: absolute; height: 70px; width: 50px; 
+    }
+    .blue ,.imp{
+      color: blue; font-style: italic; font-size: xx-large;
+    }
+        </style>
+    </head>
+    <body>
+
+    <button id="click">click</button> 
+    <h1>Goku</h1>
+
+
+    <button class="fadetoggle">fadetoggle</button> 
+    <p class="p1">Ball manga series created by Akira Toriyama. He is</p>
+    <p class="p2"> based on Sun Wukong (known as Son Goku in Japan and Monkey King in the West), </p>
+    <p class="p3"> based on Sun Wukong (known as Son Goku in Japan and Monkey King in the West), </p> <br> <br>
+
+
+    <button class="fadeout">fadeout</button> 
+    <p class="p" style="background-color: red;">Ball manga series created by Akira Toriyama. He is</p>
+    <p class="sun" style="background-color:yellow;"> based on Sun Wukong (known as Son Goku in Japan and Monkey King in the West), </p>
+    <p class="tree" style="background-color: green;"> based on Sun Wukong (known as Son Goku in Japan and Monkey King in the West), </p> <br> <br>
+
+    
+    <button class="fadein">fadein</button> 
+    <p class="p" style="background-color: red; display:none">Ball manga series created by Akira Toriyama. He is</p>
+    <p class="sun" style="background-color:yellow; display:none"> based on Sun Wukong (known as Son Goku in Japan and Monkey King in the West), </p>
+    <p class="tree" style="background-color: green; display:none"> based on Sun Wukong (known as Son Goku in Japan and Monkey King in the West), </p> <br> <br>
+
+
+        <p>Son Goku[nb 21] is a fictional character and the main protagonist of the Dragon </p>
+    <p class="ball">Ball manga series created by Akira Toriyama. He is</p>
+    <p id="base"> based on Sun Wukong (known as Son Goku in Japan and Monkey King in the West), </p>
+
+    <button>click</button> <br> <br>
+    <button class="show">show</button>
+    <button class="hide">hide</button>
+    <br> <br>
+
+    <button class="fadeto">fadeto</button> <br> <br>
+    <img class="dit" src="./img/logo.png" style="height: 50px; width: 60px; "><br><br>
+    <img  class="dits" src="./img/logo.png" style="height: 50px; width: 60px;"><br><br>
+    <img class="ditstek" src="./img/logo.png" style="height: 50px; width: 60px;"><br><br>
+
+
+    <form>
+    name:<input type="text" name="fullname"><br><br>
+     age:<input type="text" name="age"><br><br>
+   email:<input type="text" name="email"><br><br>
+    <input type="submit" value="Submit"><br><br>
+    </form><br>
+    <button id="sum">submit</button>
+    <input id="inval" value="akshay" onchange="alert(this.value)" type="text">    
+
+    <br>
+    <br>
+
+    <p>Window resized <span>0</span> times.</p>
+    <p>Try resizing your browser window.</p>
+    <button class="size">resized</button>
+    <br><br>
+
+    <button id="anni">animate</button>
+    <div id="glow"></div>
+
+    <div class="main">
+    <div id="flip">Clic k to slide down panel</div>
+    <div id="panel">Hello world!</div>
+    </div>
+
+    <div class="main">
+      <div id="side">Clic k to slide up panel</div>
+      <div id="docs">Hello world!</div>
+      </div>
+
+
+      <div id="advant" style="border:1px solid black;  width:200px; height:100px; overflow:scroll;"> In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+    in this world haven't had the advantages that you've had.'
+        </div>
+        <p>Scrol paira<span>0</span> times.</p>
+        <button class="scol"> scrolll</button>
+        <br>
+        <br>
+        <br>
+        <div class="gett">
+        <p id="test1" >This is a paragraph</p>aragraph</p>
+        <p id="test2" >This is remow paragraph</p>    
+        <p id="test">This is some <b>bold name </b> text in a paragraph. <input id="txt" type="text" value="captain"></p>
+<button id="btn1" > text</button >
+<button id="btn2"> html</button>
+<button id="btn3"> value</button>
+</div>
+
+<p class="z">This is a paragraph.</p>
+<p class="z">This is another paragraph.</p>
+
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+<button id="app" > appen to p</button>
+<button id="lit" > appen to List</button>
+<br>
+<br>
+<br>
+
+<img src="./img/logo.png" alt="jQuery" width="100" height="50 "><br><br>
+
+<button id="bt1">Insert before</button>
+<button id="bt2">Insert after</button>
+
+        
+<p class="test">This is a paragraph.</p>
+<p class="test">This is another paragraph.</p>
+<p class="test">This is another paragraph.</p>
+
+<p class="blue">This is a paragraph.</p>
+<p class="imp">This is another paragraph.</p>
+
+
+<button id="re">Remove all p elements with class="test"</button>
+<button id="emp">Empty the div element</button>
+<br>
+<br>
+<button id="clbtn" >class</button>
+<button id="reclbtn" >reclass</button>
+<button id="togbtn" >toggclass</button>
+<button id="btncss" >css</button>
+
+
+    </body>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="./jsquery.js"></script>
+
+    </html>
